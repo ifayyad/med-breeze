@@ -1,142 +1,113 @@
 /* style.css */
 
 :root {
-    --primary-color: #FF6F61; /* Primary color */
-    --secondary-color: #00B2CA; /* Secondary color */
-    --background-color: #F5F5F5; /* Background color */
-    --text-color: #333333; /* Text color */
-  }
+  --primary-color: #FF6F61; /* Primary color */
+  --secondary-color: #00B2CA; /* Secondary color */
+  --background-color: #F5F5F5; /* Background color */
+  --text-color: #333333; /* Text color */
+}
 
-  header {
-    background-color: var(--primary-color);
-  }
-  
-  footer {
-    background-color: var(--primary-color);
-  }
+header {
+  background-color: var(--primary-color);
+}
 
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
-  }
-  
+footer {
+  background-color: var(--primary-color);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
 
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header styles */
 header {
-    
-    padding: 30px;
-   
+  padding: 20px;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-      
-  }
-  
-  nav li {
-    margin: 0 10px;
-  }
-  
-  nav a {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: var(--primary-color);
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
 
 /* Section styles */
 section {
-    padding: 20px;
-    margin-bottom: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 h1, h2, h3 {
-    color: #333;
+  color: #333;
 }
 
 /* Footer styles */
 footer {
-   
-    padding: 10px;
-    color: #fff;
-    text-align: center;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
 }
 
 /* Media queries for responsive design */
 @media screen and (max-width: 600px) {
-    h1 {
-        font-size: 24px;
-    }
+  h1 {
+    font-size: 24px;
+  }
 
-    h2 {
-        font-size: 20px;
-    }
+  h2 {
+    font-size: 20px;
+  }
+}
+
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  overflow: hidden;
+  margin-bottom: 20px; /* Add margin-bottom to create space between carousel and dots navigation */
+}
+
+.carousel {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center; /* Adjust alignment to center the images vertically within the carousel */
+  height: 300px;
+  padding-bottom: 10px; /* Add padding-bottom to create space between carousel images and dots navigation */
 }
 
 .carousel img {
-    width: 50%;
-    height: auto;
-  }
-
-  .carousel-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .carousel {
-    max-width: 600px; /* Adjust the value to your desired width */
-    margin: 0 auto;
-  }
-
-  .carousel-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden; /* Add this line to hide any overflowing content */
-  }
-  
-  .carousel {
-    max-width: 600px; /* Adjust the value to your desired width */
-    margin: 0 auto;
-    display: flex; /* Add this line to horizontally center the images within the carousel */
-  }
-  
-  .carousel img {
-    width: 100%;
-    height: auto;
-    object-fit: contain; /* Add this line to maintain aspect ratio and prevent image stretching */
-  }
-
-  .carousel {
-    max-width: 600px; /* Adjust the value to your desired width */
-    margin: 0 auto;
-    height: 300px; /* Adjust the value to your desired height */
-  }
-  
-  .carousel img {
-    object-fit: cover;
-  }
-  
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-fit: cover;
+}
