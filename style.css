@@ -111,3 +111,10 @@ footer {
   object-fit: contain;
   object-fit: cover;
 }
+
+#tempo {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
