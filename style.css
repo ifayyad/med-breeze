@@ -46,6 +46,11 @@ nav li {
   margin: 0 10px;
 }
 
+nav .menu-link {
+  cursor: pointer !important; /* Add !important to override other rules */
+}
+
+
 nav a {
   font-size: 20px;
   font-weight: bold;
@@ -53,6 +58,7 @@ nav a {
   color: var(--text-color);
   text-decoration: none;
   transition: color 0.3s ease;
+  cursor: pointer !important;
 }
 
 nav a:hover {
@@ -117,4 +123,17 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.description {
+  display: none;
+}
+
+.description.show {
+  display: block;
+}
+
+section {
+  padding-left: 80px; /* Adjust the value as needed */
+  margin-left: 20px; /* Adjust the value as needed */
 }
